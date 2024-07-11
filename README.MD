@@ -1,7 +1,7 @@
 # Practical Python Design Patterns
 Welcome to the “Practical Python Design Patterns” repository!
 
-## Overview
+## Description
 This repository aims to provide practical examples and solutions for various design patterns in Python. Whether you’re a beginner or an experienced developer, understanding design patterns is crucial for writing **maintainable**, **flexible**, and **efficient** code.
 
 The content here is inspired by the book “Head First Design Patterns” by. We’ve distilled the key concepts and translated them into real-world scenarios.
@@ -10,7 +10,7 @@ The content here is inspired by the book “Head First Design Patterns” by. We
     <img width="300" height="300" src="https://learning.oreilly.com/library/cover/9781492077992/250w/">
 </p>
 
-What You’ll Find
+## What You’ll Find
 Here are some of the patterns covered:
 
 - Singleton Pattern: Ensures that a class has only one instance and provides a global point of access to it.
