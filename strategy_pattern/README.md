@@ -6,7 +6,7 @@ This repository contains Python code corresponding to Chapter 1 of the **“Head
 ![strategy_pattern](./images/%20strategy_pattern.png)
 
 
-## Implementation
+## Key Concepts and Implementation
 In this example, we define the following components:
 
 1. **Context (`Duck` class):** The object whose behavior will change based on the selected strategy.
