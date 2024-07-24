@@ -1,6 +1,7 @@
 # Decorator Pattern in Python
 
 This repository demonstrates the **Decorator Pattern**, a structural design pattern that allows behavior to be dynamically added to individual objects without affecting other objects of the same class. In this example, we create a simple beverage ordering system with decorators.
+
 This repository contains Python code corresponding to Chapter 3 of the **“Head First Design Patterns”** book. The original code in the book is written in Java, and I’ve converted it to Python.
 ![decorator_pattern](./images/decorator_pattern.png)
 
