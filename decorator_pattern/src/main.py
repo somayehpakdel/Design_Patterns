@@ -7,16 +7,18 @@ if __name__ == "__main__":
     beverage = Espresso()
     print(f"{beverage.get_description()} ${beverage.cost()}")
 
+    #be careful about variables reassigning, beacause it will change the data types
+    #so, it's better to create a new variable for each condiment
     #create a DarkRoast with condiments
-    beverage2 = DarkRoast()
-    beverage2 = Mocha(beverage2)
-    beverage2 = Mocha(beverage2)
-    beverage2 = Whip(beverage2)
-    print(f"{beverage2.get_description()} ${beverage2.cost()}")
+    dark_rost = DarkRoast()
+    dark_rost_mocha = Mocha(dark_rost)
+    dark_rost_mocha = Mocha(dark_rost_mocha)
+    dark_rost_mocha_whip = Whip(dark_rost_mocha)
+    print(f"{dark_rost_mocha_whip.get_description()} ${dark_rost_mocha_whip.cost()}")
 
     #create a HouseBlend with condiments
-    beverage3 = HouseBlend()
-    beverage3 = Soy(beverage3)
-    beverage3 = Mocha(beverage3)
-    beverage3 = Whip(beverage3)
-    print(f"{beverage3.get_description()} ${beverage3.cost()}")
+    house_blend = HouseBlend()
+    house_blend_soy = Soy(house_blend)
+    house_blend_soy_mocha = Mocha(house_blend_soy)
+    house_blend_soy_mocha_whip = Whip(house_blend_soy_mocha)
+    print(f"{house_blend_soy_mocha_whip.get_description()} ${house_blend_soy_mocha_whip.cost()}")
