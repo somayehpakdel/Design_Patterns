@@ -59,30 +59,33 @@ Suppose you're building a coffee shop application that allows customers to custo
 4. **Example Usage:**
    - You create an `Espresso` object and print its description and cost.
    - You create a `DarkRoast` object, add two `Mocha` condiments and one `Whip` condiment, and print the updated description and cost.
-   - You create a `HouseBlend` object, add `Soy` and `Mocha` condiments, and print the final description and cost.
+   - You create a `HouseBlend` object, add `Soy`, `Mocha` and `Whip` condiments, and print the final description and cost.
 
 Here's how the scenario plays out:
 
 ```python
 # Example usage
 if __name__ == "__main__":
-    # Create an Espresso
+    
+    #create an Espresso with no condiments
     beverage = Espresso()
-    print(beverage.get_description() + " $" + str(beverage.cost()))
+    print(f"{beverage.get_description()} ${beverage.cost()}")
 
-    # Create a Dark Roast with condiments
-    beverage2 = DarkRoast()
-    beverage2 = Mocha(beverage2)
-    beverage2 = Mocha(beverage2)
-    beverage2 = Whip(beverage2)
-    print(beverage2.get_description() + " $" + str(beverage2.cost()))
+    #be careful about variables reassigning, beacause it will change the data types
+    #so, it's better to create a new variable for each condiment
+    #create a DarkRoast with condiments
+    dark_rost = DarkRoast()
+    dark_rost_mocha = Mocha(dark_rost)
+    dark_rost_mocha = Mocha(dark_rost_mocha)
+    dark_rost_mocha_whip = Whip(dark_rost_mocha)
+    print(f"{dark_rost_mocha_whip.get_description()} ${dark_rost_mocha_whip.cost()}")
 
-    # Create a House Blend with condiments
-    beverage3 = HouseBlend()
-    beverage3 = Soy(beverage3)
-    beverage3 = Mocha(beverage3)
-    beverage3 = Whip(beverage3)
-    print(beverage3.get_description() + " $" + str(beverage3.cost()))
+    #create a HouseBlend with condiments
+    house_blend = HouseBlend()
+    house_blend_soy = Soy(house_blend)
+    house_blend_soy_mocha = Mocha(house_blend_soy)
+    house_blend_soy_mocha_whip = Whip(house_blend_soy_mocha)
+    print(f"{house_blend_soy_mocha_whip.get_description()} ${house_blend_soy_mocha_whip.cost()}")
 ```
 
 In this scenario, the decorator pattern allows you to dynamically add and modify behavior (condiments) to the base coffee types without altering their core implementation. Customers can now enjoy customized coffee orders with various combinations of condiments! ☕🌟
