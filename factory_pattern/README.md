@@ -2,6 +2,32 @@
 
 This repository is about **Factory Pattrn**. The content and code of this repository is inspired by Chapter 4 of the book " Head Frist Design Patterns". The original code is written in Java and I'v converted it to Python. 
 
+This repository includes three ways to encapsulate object creation:
+
+- **Simple Factory**
+- **Factory Method**
+- **Abstract Factory**
+
+Each of these patterns is explained in their respective folders and is provided with Python code examples.
+
+## Project structure
+```
+└── 📁factory_pattern
+    └── README.md
+    └── 📁abstract_factory
+        └── README.md
+        └── 📁images
+        └── 📁src
+    └── 📁factory_method
+        └── README.md
+        └── 📁images
+        └── 📁src
+    └── 📁simple_factory
+        └── README.md
+        └── 📁images
+        └── 📁src
+```
+
 ## Encapsulation of Object Creation
 All factory patterns encapsulate the process of creating objects. This means that the details of how objects are created are hidden from the client, promoting a cleaner and more modular design.
 
