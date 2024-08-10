@@ -35,29 +35,29 @@ class NYPizzaStore(PizzaStore):
     """
 
     def create_pizza(self, pizza_type: str) -> Optional[Pizza]:
+        pizza: Optional[Pizza] = None
         if pizza_type == "cheese":
-            return NYStyleCheesePizza()
+            pizza = NYStyleCheesePizza()
         elif pizza_type == "veggie":
-            return NYStyleVeggiePizza()
+            pizza = NYStyleVeggiePizza()
         elif pizza_type == "clam":
-            return NYStyleClamPizza()
+            pizza =  NYStyleClamPizza()
         elif pizza_type == "pepperoni":
-            return NYStylePepperoniPizza()
-        else:
-            return None
+            pizza =  NYStylePepperoniPizza()
+        return pizza
 
 class ChicagoPizzaStore(PizzaStore):
     """
     A concrete implementation of PizzaStore that creates Chicago-style pizzas.
     """
     def create_pizza(self, pizza_type: str) -> Optional[Pizza]:
+        pizza: Optional[Pizza] = None
         if pizza_type == "cheese":
-            return ChicagoStyleCheesePizza()
+            pizza = ChicagoStyleCheesePizza()
         elif pizza_type == "veggie":
-            return ChicagoStyleVeggiePizza()
+            pizza = ChicagoStyleVeggiePizza()
         elif pizza_type == "clam":
-            return ChicagoStyleClamPizza()
+            pizza = ChicagoStyleClamPizza()
         elif pizza_type == "pepperoni":
-            return ChicagoStylePepperoniPizza()
-        else:
-            return None
+            pizza = ChicagoStylePepperoniPizza()
+        return pizza
